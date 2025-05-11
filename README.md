@@ -22,10 +22,10 @@ as Bluetooth® 5. The operating voltage of this SoC is 3.3 V.
 ![Block Diagram](schematics/block_diagram.png)
 
 ### Schematic
-+-------------------------------------------------------------------------------------------------+
-|                                   ASCII WIRING DIAGRAM                                          |
-|                           Arduino Nano ESP32 S3, Display, Joystick, Buttons                     |
-+-------------------------------------------------------------------------------------------------+
+    +-------------------------------------------------------------------------------------------------+
+    |                                   ASCII WIRING DIAGRAM                                          |
+    |                           Arduino Nano ESP32 S3, Display, Joystick, Buttons                     |
+    +-------------------------------------------------------------------------------------------------+
 
   BREADBOARD POWER RAILS:
 
@@ -56,26 +56,26 @@ as Bluetooth® 5. The operating voltage of this SoC is 3.3 V.
                           +---------------------------------+
 
 
-+-----------------------------+        +---------------------------+       +----------+                 +----------+
-|   SPI LCD (ST7735S based)   |        |        JOYSTICK           |       | BUTTON 1 |                 | BUTTON 2 |
-|                             |        |                           |       |  (BTN1)  |                 |  (BTN2)  |
-| VCC   o---------------------D        | VCC (lbl +5V) o-----------D       |          |                 |          |
-| GND   o---------------------G        | GND           o-----------G       | Sig o-----(B1_S from D5)
-| CLK   o----(SPI_SCK from D13)        |                           |       |          |                 | Sig o-----(B2_S from D6)
-| SDA   o----(SPI_MOSI from D11)       | VRx           o----(JY_VRx to A0) | Gnd o-----G                | Gnd o-----G
-| RS/DC o----(LCD_RS from D8)          | VRy           o----(JY_VRy to A1) +----------+                 +----------+
-| RST   o----(LCD_RST from D9)         | SW            o----(JY_SW to D4)
-| CS    o----(LCD_CS from D10)         +---------------------------+
-|                             |
-| -- SD Card Slot --
-| SD_CS   o--(To D7 or other free pin)  (Unique CS for SD Card)
-| SD_MOSI o--(To SPI_MOSI / D11)        (Shares MOSI with LCD)
-| SD_SCK  o--(To SPI_SCK / D13)         (Shares SCK with LCD)
-| SD_MISO o--(To SPI_MISO / D12)        (MISO line for SD Card data out)
-+-----------------------------+
+    +-----------------------------+        +---------------------------+       +----------+                 +----------+
+    |   SPI LCD (ST7735S based)   |        |        JOYSTICK           |       | BUTTON 1 |                 | BUTTON 2 |
+    |                             |        |                           |       |  (BTN1)  |                 |  (BTN2)  |
+    | VCC   o---------------------D        | VCC (lbl +5V) o-----------D       |          |                 |          |
+    | GND   o---------------------G        | GND           o-----------G       | Sig o-----(B1_S from D5)
+    | CLK   o----(SPI_SCK from D13)        |                           |       |          |                 | Sig o-----(B2_S from D6)
+    | SDA   o----(SPI_MOSI from D11)       | VRx           o----(JY_VRx to A0) | Gnd o-----G                | Gnd o-----G
+    | RS/DC o----(LCD_RS from D8)          | VRy           o----(JY_VRy to A1) +----------+                 +----------+
+    | RST   o----(LCD_RST from D9)         | SW            o----(JY_SW to D4)
+    | CS    o----(LCD_CS from D10)         +---------------------------+
+    |                             |
+    | -- SD Card Slot --
+    | SD_CS   o--(To D7 or other free pin)  (Unique CS for SD Card)
+    | SD_MOSI o--(To SPI_MOSI / D11)        (Shares MOSI with LCD)
+    | SD_SCK  o--(To SPI_SCK / D13)         (Shares SCK with LCD)
+    | SD_MISO o--(To SPI_MISO / D12)        (MISO line for SD Card data out)
+    +-----------------------------+
 
 
-----------------------------------------------------------------------------------------------------
+    ----------------------------------------------------------------------------------------------------
 WIRING NOTES:
 
 1.  **Power:**
