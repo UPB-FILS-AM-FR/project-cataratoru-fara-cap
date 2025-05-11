@@ -1,4 +1,4 @@
-# Doom Port for EXP32S3
+# Doom Port for ESP32S3
 
 | | |
 |-|-|
