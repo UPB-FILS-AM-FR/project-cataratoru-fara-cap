@@ -19,7 +19,7 @@ as Bluetooth® 5. The operating voltage of this SoC is 3.3 V.
 
 ### Block diagram
 
-![Block Diagram](schematics/block_diagram.png)
+![Block Diagram](schematics/block diaggram retro esp32.png)
 
 ### Schematic
     +-------------------------------------------------------------------------------------------------+
